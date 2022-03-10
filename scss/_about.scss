@@ -1,0 +1,50 @@
+.about-section {
+    background:rgb(255, 255, 255);
+    background-position: center;
+    background-repeat: no-repeat;
+    background-attachment: scroll;
+    background-size: cover;
+    padding: $sectionPaddingTop 0;
+
+    @media(max-width: 768px) {
+        padding-top: 3rem;
+        padding-bottom: 3rem;
+    }
+
+    .about-content-row {
+
+        margin-top: 3rem;
+
+        .about-content-img {
+            display: flex;
+            justify-content: center;
+            align-items: center;
+
+            a{
+                text-align: center;
+            }
+
+            img {
+                background-color: rgb(255, 255, 255);
+                transition: all 250ms ease;
+                max-width: 90%;
+                border-radius: 4px;
+                box-shadow: $cardboxshadow;
+                @media(min-width: 768px) {
+                    &:hover {
+                        transform: scale(1.05)
+                    }
+                }
+            }
+        }
+
+        .about-content-text {
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            flex-direction: column;
+        }
+    }
+
+
+}
